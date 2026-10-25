@@ -1,0 +1,41 @@
+{
+  "name": "tugas-3-prak",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tugas 3 Praktikum RSI - validasi, autentikasi JWT, dan otorisasi role",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "prestart": "npm run docs:gen",
+    "dev": "tsx watch src/index.ts",
+    "predev": "npm run docs:gen",
+    "docs:gen": "tsx src/docs/swagger.ts",
+    "db:seed": "tsx src/db/seed.ts",
+    "db:seed-auth": "tsx src/db/seed-auth.ts"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@asteasolutions/zod-to-openapi": "^7.3.4",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^1.0.0-rc.5-5935859",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mssql": "^11.0.2",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mssql": "^9.1.11",
+    "@types/node": "^26.6.3",
+    "@types/swagger-ui-express": "^4.1.8",
+    "drizzle-kit": "^1.0.0-rc.5-5935859",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
